@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="fullPage" id="container">
+        <div class="leftHalf">
+            <input type="text" placeholder="IdInstance" id="idInstanceField" />
+            <br>
+            <br>
+            <input type="text" placeholder="ApiTokenInstance" id="apiTokenField" />
+            <br>
+            <br>
+            <button onclick="getSettings()" id="getSettingsButton">getSettings</button>
+            <br>
+            <br>
+            <button onclick="getState()" id="getStateButton">getStateInstance</button>
+            <br>
+            <br>
+            <input type="text" placeholder="phone number" id="phoneNumber" />
+            <br>
+            <br>
+            <textarea type="text" placeholder="message" id="message" cols="30", rows="4"></textarea>
+            <br>
+            <br>
+            <button onclick="sendMessage()" id="sendMessageButton">sendMessage</button>
+            <br>
+            <br>
+            <input type="text" placeholder="phone number" id="phoneNumber2" />
+            <br>
+            <br>
+            <input type="text" placeholder="file url path" id="urlFile" />
+            <br>
+            <br>
+            <button onclick="sendFile()" id="sendFileButton">sendFileByUrl</button>
+        </div>
+
+        <div class="rightHalf">
+            <h5>Ответ:</h5>
+            <textarea readonly name="responseArea" id="responseArea" cols="50" rows="20"></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
